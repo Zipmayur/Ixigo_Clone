@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ixigo-clone</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-left">
+                <div class="ixg-logo"></div>
+                <div class="ixg-flights">
+                    <i class="fa-solid fa-plane-lock"></i>
+                    <p class="flights-txt">Flights</p>
+                </div>
+                <div class="ixg-hotels">
+                    <i class="fa-solid fa-hotel"></i>
+                    <p class="hotels-txt">Hotels</p>
+                </div>
+                <div class="ixg-trains">
+                    <i class="fa-solid fa-train-subway"></i>
+                    <p class="trains-txt">Trains</p>
+                </div>
+                <div class="ixg-buses">
+                    <i class="fa-solid fa-bus"></i>
+                    <p class="buses-txt">Buses</p>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="ixg-offers">
+                <i class="fa-solid fa-percent"></i>
+                <p class="offers-txt">Offers</p>
+             </div>
+             <div class="ixg-cus">
+                <i class="fa-solid fa-headset"></i>
+                <p class="cus-txt">Customer Services</p>
+             </div>
+             <div class="ixg-login">
+                <i class="fa-solid fa-user"></i>
+                <p class="login-txt">Login/SignUp</p>
+             </div>
+             
+            </div>
+        </div>
+        <div class="head">
+            <div class="ixg-dst">
+                <h1 class="ngp-mum">Nagpur to Mumbai Trains</h1>
+                <div class="dist">
+                    
+                    <div class="from">
+                        <i class="fa-solid fa-train"></i>
+                        <div class="from-ngp">
+                        <p>From</p>
+                    
+                   <label for="ixg-from">
+                   <select id="ixg-from">
+                    <option value="nagpur"selected>Nagpur (NGP)</option>
+                    <option value="kamptee">Kamptee (KP)</option>
+                    <option value="agini">Agni (AGINI)</option>
+                    <option value="buti bori">Buti Bori (BTBR)</option>
+                    <option value="kalamna">Kalamna (KAV)</option>
+                   </select>
+                </label>
+                </div>
+                    </div>
+
+                    <div class="travel">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                
+            
+            <div class="to">
+                <i class="fa-solid fa-train"></i>
+                <div class="to-csmrt">
+                <p>To</p>
+            
+           <label for="ixg-to">
+           <select id="ixg-to">
+            <option value="C Shivaji Mah"selected>C Shivaji Mah T (CSTM)</option>
+            <option value="kalyan">Kalyan (KYN)</option>
+            <option value="kalyankot">Kalyankot (KYNT)</option>
+            <option value="kinwat">Kinwat (KNVT)</option>
+            <option value="mahes">Mahes Khunt (MSK)</option>
+           </select>
+        </label>
+    </div>
+        </div>
+        <div class="date-logo">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="search-date">
+            <p>Departure Date</p>
+            <label for="tdate">
+            <input type="date" id="tdate">
+        </label>
+            
+        </div>
+    </div>
+    <button id="select-date">Search</button>
+        </div>
+    </div>
+</div>
+    </header>
+    <div class="full-content">
+    <div class="content">
+    <div class="home">
+        <ol class="h">Home</ol>
+        <ol class="t">Trains</ol>
+        <ol class="tt">Nagpur to Mumbai Trains</ol>
+    </div>
+    <div class="n-trains">
+        <h2 class="number">7 Trains from Nagpur to Mumbai</h2>
+    </div>
+    <div class="dummy-popular">
+    <div class="main-popular">
+        <div id="popular-1">
+            <div id="popular-1a">
+                <p class="p-t-no1">1830 SHM LTT EXPRESS</p>
+                <div class="ptime1">
+                <h3 class="p-time1">13:50 </h3>
+                <p class="p-from">NGP</p>
+                <i class="fa-solid fa-arrow-right"></i>
+                <h3 class="p-time1">04:00</h3>
+                <p class="p-from">LTT</p>
+            </div>
+            <button id="book1">Book ₹ 425</button>
+        </div>
+    </div>
+        <div id="popular-2">
+            <div id="popular-2b">
+                <p class="p-t-no2">12290 CSMT DURONTO EXP</p>
+                <div class="ptime2">
+                    <h3 class="p-time2">20:30 </h3>
+                    <p class="p-from">NGP</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <h3 class="p-time2">8:05</h3>
+                    <p class="p-from">CSMT</p>
+                </div>
+                <button id="book2">Book ₹ 685</button>
+            </div>
+        </div>
+        <div id="popular-3">
+            <div id="popular-3c">
+                <p class="p-t-no3">12860 GITANJALI EXP</p>
+                <div class="ptime3">
+                    <h3 class="p-time3">07:45 </h3>
+                    <p class="p-from">NGP</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <h3 class="p-time3">21:20</h3>
+                    <p class="p-from">CSMT</p>
+                </div>
+                <button id="book3">Book ₹ 480</button>
+            </div>
+        </div>
+        <div id="popular-4">
+            <div id="popular-4d">
+                <p class="p-t-no4">12290 CSMT DURONTO EXP</p>
+                <div class="ptime4">
+                <h3 class="p-time3">20:30 </h3>
+                <p class="p-from">NGP</p>
+                <i class="fa-solid fa-arrow-right"></i>
+                <h3 class="p-time3">08:05</h3>
+                <p class="p-from">CSMT</p>
+            </div>
+            <button id="book4">Book ₹ 685</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-seats">
+<div class="seats">
+    <div id="s1">
+        <p class="day11">Wed, 11 Sep</p>
+        <p class="r1-seats"> | Filling fast</p>
+    </div>
+    <div id="s2">
+        <p class="day11">Thu, 12 Sep</p>
+        <p class="r2-seats"> | Few Seats</p>
+    </div>
+    <div id="s3">
+        <p class="day11">Fri, 13 Sep</p>
+        <p class="r2-seats"> | Few Seat</p>
+    </div>
+    <div id="s4">
+        <p class="day11">Sat, 14 Sep</p>
+        <p class="r2-seats"> | Few Seats</p>
+    </div>
+    <div id="s5">
+        <p class="day11">Sun, 15 Sep</p>
+        <p class="r2-seats"> | Few Seats</p>
+    </div>
+    <div id="s6">
+        <p class="day11">Mon, 16 Sep</p>
+        <p class="r2-seats"> | Few Seats</p>
+    </div>
+    <div id="s7">
+        <p class="day11">Tue, 17 Sep</p>
+        <p class="r2-seats"> | Few Seats</p>
+    </div>
+    <div id="s8">
+        <i class="fa-solid fa-train-tram"></i>
+        <p id="s8-m">Sep</p>
+    </div>
+</div>
+</div>
+<div class="main-distance">
+    <div class="m-avl1">
+        <div class="avl1">
+            <p class="avl1-t-n">12860 Gitanjali Expresss</p>
+            
+            <ul style="list-style-type:disc;" class="avl1-run-days"><li> Runs on:S M T W T F S</li> </ul>
+            <ul style="list-style-type:disc;" class="avl1-t-t"><li>Mail/Express</li></ul>
+            <p class="avl1-status">(12860 Running Status)</p>
+        </div>
+        <div class="avl1-km">
+            <div id="avl1-box1">
+                <div id="avl1-box1a">
+                    <p class="start1-name">NGP</p>
+                    <p class="start1-time">07:45</p>
+                    <p class="start1-date">Fri 13 Sep</p>
+                </div>
+                <div id="avl1-box2">
+                    <p class="total1-time">13hr 35min</p>
+                    <i class="fa-solid fa-left-right"></i>
+                    <p class="travel1-date">837 km</p>
+                </div>
+                <div id="avl1-box1b">
+                    <p class="end1-name">CSMT</p>
+                    <p class="end1-time">21:20</p>
+                    <p class="end1-date">Fri 13 Sep</p>
+                </div>
+            </div>
+        
+        <div class="sl1">
+            <div class="sl1-store">
+                <div id="sl1-boxa">
+                    <p class="sl1a-txt1">SL</p>
+                </div>
+                <div id="sl1-boxb">
+                    <p class="sl1a-txt2">3A</p>
+                </div>
+                <div id="sl1-boxc">
+                    <p class="sl1a-txt3">2A</p>
+                </div>
+                <div id="sl1-boxd">
+                    <p class="sl1a-txt4">1A</p>
+                </div>
+            </div>
+                <div class="sl1-amt">₹ 460</div>
+            </div>
+            
+            <button class="s1-avail">SHOW AVAILABILITY</button>
+        </div>
+    </div>
+
+
+        <div class="m-avl2">
+        <div class="avl2">
+            <p class="avl2-t-n">18030 SHM LTT EXPRESS</p>
+            
+            <ul style="list-style-type:disc;" class="avl1-run-days"><li> Runs on:S M T W T F S</li> </ul>
+            <ul style="list-style-type:disc;" class="avl1-t-t"><li>Mail/Express</li></ul>
+            <p class="avl1-status">(18030 Running Status)</p>
+        </div>
+        <div class="avl2-km">
+            <div id="avl2-box1">
+                <div id="avl2-box1a">
+                    <p class="start2-name">NGP</p>
+                    <p class="start2-time">13:35</p>
+                    <p class="start2-date">Fri 13 Sep</p>
+                </div>
+                <div id="avl2-box2">
+                    <p class="total2-time">14hr 45min</p>
+                    <i class="fa-solid fa-left-right"></i>
+                    <p class="travel2-date">821 km</p>
+                </div>
+                <div id="avl2-box1b">
+                    <p class="end2-name">LTT</p>
+                    <p class="end2-time">04:20</p>
+                    <p class="end2-date">Fri 14 Sep</p>
+                </div>
+            </div>
+        
+        <div class="sl2">
+            <div class="sl2-store">
+                <div id="sl2-boxa">
+                    <p class="sl2a-txt1">SL</p>
+                </div>
+                <div id="sl2-boxb">
+                    <p class="sl2a-txt2">3A</p>
+                </div>
+                <div id="sl2-boxc">
+                    <p class="sl2a-txt3">2A</p>
+                </div>
+                <div id="sl2-boxd">
+                    <p class="sl2a-txt4">1A</p>
+                </div>
+            </div>
+                <div class="sl2-amt">₹ 425</div>
+            </div>
+            
+            <button class="s2-avail">SHOW AVAILABILITY</button>
+    </div>
+</div>
+    <div class="m-avl3">
+        <div class="avl3">
+            <p class="avl3-t-n">12810 HWH CSMT MAIL</p>
+            
+            <ul style="list-style-type:disc;" class="avl3-run-days"><li> Runs on:S M T W T F S</li> </ul>
+            <ul style="list-style-type:disc;" class="avl3-t-t"><li>Mail/Express</li></ul>
+            <p class="avl3-status">(12810 Running Status)</p>
+        </div>
+        <div class="avl3-km">
+            <div id="avl3-box1">
+                <div id="avl3-box1a">
+                    <p class="start3-name">NGP</p>
+                    <p class="start3-time">14:00</p>
+                    <p class="start3-date">Fri 13 Sep</p>
+                </div>
+                <div id="avl3-box2">
+                    <p class="total3-time">13hr 57min</p>
+                    <i class="fa-solid fa-left-right"></i>
+                    <p class="travel3-date">828 km</p>
+                </div>
+                <div id="avl3-box1b">
+                    <p class="end3-name">DR</p>
+                    <p class="end3-time">03:57</p>
+                    <p class="end3-date">Fri 14 Sep</p>
+                </div>
+            </div>
+        
+        <div class="sl3">
+            <div class="sl3-store">
+                <div id="sl3-boxa">
+                    <p class="sl3a-txt1">SL</p>
+                </div>
+                <div id="sl3-boxb">
+                    <p class="sl3a-txt2">3A</p>
+                </div>
+                <div id="sl3-boxc">
+                    <p class="sl3a-txt3">2A</p>
+                </div>
+                <div id="sl3-boxd">
+                    <p class="sl3a-txt4">1A</p>
+                </div>
+            </div>
+                <div class="sl3-amt">₹ 455</div>
+            </div>
+            
+            <button class="s3-avail">SHOW AVAILABILITY</button>
+    </div>
+</div>
+    <div class="m-avl4">
+        <div class="avl4">
+            <p class="avl4-t-n">12102 JANANESWARI EXP</p>
+            
+            <ul style="list-style-type:disc;" class="avl4-run-days"><li> Runs on:S M T W T F S</li> </ul>
+            <ul style="list-style-type:disc;" class="avl4-t-t"><li>Mail/Express</li></ul>
+            <p class="avl4-status">(12102 Running Status)</p>
+        </div>
+        <div class="avl4-km">
+            <div id="avl4-box1">
+                <div id="avl4-box1a">
+                    <p class="start4-name">NGP</p>
+                    <p class="start4-time">14:20</p>
+                    <p class="start4-date">Fri 13 Sep</p>
+                </div>
+                <div id="avl3-box2">
+                    <p class="total4-time">13hr 50min</p>
+                    <i class="fa-solid fa-left-right"></i>
+                    <p class="travel4-date">821 km</p>
+                </div>
+                <div id="avl4-box1b">
+                    <p class="end4-name">LTT</p>
+                    <p class="end4-time">04:10</p>
+                    <p class="end4-date">Fri 14 Sep</p>
+                </div>
+            </div>
+        
+        <div class="sl4">
+            <div class="sl4-store">
+                <div id="sl4-boxa">
+                    <p class="sl3a-txt1">SL</p>
+                </div>
+                <div id="sl4-boxb">
+                    <p class="sl3a-txt2">3A</p>
+                </div>
+                <div id="sl4-boxc">
+                    <p class="sl4a-txt3">2A</p>
+                </div>
+                <div id="sl4-boxd">
+                    <p class="sl4a-txt4">1A</p>
+                </div>
+            </div>
+                <div class="sl4-amt">₹ 455</div>
+            </div>
+            
+            <button class="s4-avail">SHOW AVAILABILITY</button>
+            </div>
+            </div>
+            <div class="m-avl5">
+                <div class="avl5">
+                    <p class="avl5-t-n">12106 VIDARBHA EXP</p>
+                    
+                    <ul style="list-style-type:disc;" class="avl5-run-days"><li> Runs on:S M T W T F S</li> </ul>
+                    <ul style="list-style-type:disc;" class="avl5-t-t"><li>Mail/Express</li></ul>
+                    <p class="avl5-status">(12106 Running Status)</p>
+                </div>
+                <div class="avl5-km">
+                    <div id="avl5-box1">
+                        <div id="avl5-box1a">
+                            <p class="start5-name">NGP</p>
+                            <p class="start5-time">17:00</p>
+                            <p class="start5-date">Fri 13 Sep</p>
+                        </div>
+                        <div id="avl5-box2">
+                            <p class="total5-time">13hr 45min</p>
+                            <i class="fa-solid fa-left-right"></i>
+                            <p class="travel5-date">837 km</p>
+                        </div>
+                        <div id="avl5-box1b">
+                            <p class="end5-name">CSMT</p>
+                            <p class="end5-time">06:50</p>
+                            <p class="end5-date">Fri 14 Sep</p>
+                        </div>
+                    </div>
+                
+                <div class="sl5">
+                    <div class="sl5-store">
+                        <div id="sl5-boxa">
+                            <p class="sl5a-txt1">SL</p>
+                        </div>
+                        <div id="sl5-boxb">
+                            <p class="sl5a-txt2">3A</p>
+                        </div>
+                        <div id="sl5-boxc">
+                            <p class="sl3a-txt3">2A</p>
+                        </div>
+                        <div id="sl5-boxd">
+                            <p class="sl3a-txt4">1A</p>
+                        </div>
+                    </div>
+                        <div class="sl5-amt">₹ 460</div>
+                    </div>
+                    
+                    <button class="s5-avail">SHOW AVAILABILITY</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+<div class="special-trains">
+    <a href="#">Vande Bharat Exp - 20901</a>
+    <a href="#">Malwa Express - 12919</a>
+    <a href="#">Jammu Rajdhani - 12425</a>
+    <a href="#">Gomti Express - 12420</a>
+   </div>
+<div class="footer">
+    <p>&#169 2024 Le Travenues Technology Ltd. India. All brands are trademarks of their respective owners.</p>
+ </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
